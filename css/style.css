@@ -82,10 +82,10 @@ dl, dd {
   display: flex;
   flex-direction: column;
   height: 457px;
-  padding: 3% 8%;
+  padding: 3.5% 10%;
 }
 .main-wrapper {
-    padding: 0 8%;
+    padding: 0 10%;
 }
 
 .main-nav {
@@ -111,7 +111,7 @@ dl, dd {
   gap: 5%;
   width: 100%;
   font-size: 16px;
-  padding-top: 20px;
+  padding-top: 12px;
 
 }
 
@@ -125,11 +125,12 @@ dl, dd {
     margin-bottom: 25px;
     font-size: 55px;
     font-weight: 600;
+    line-height: 56px;
 }
 
 .slide-content p {
     margin-bottom: 38px;
-    line-height: 24px;
+    line-height: 22px;
 }
 
 .main-btn {
@@ -176,8 +177,8 @@ dl, dd {
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 10%;
-    margin-top: 80px;
+    gap: 8.5%;
+    margin-top: 70px;
     border-bottom: 2px solid var(--gray);
     margin-right: 50px;
 }
@@ -187,6 +188,7 @@ dl, dd {
 }
 
 .services-items h3 {
+    padding: 0;
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
@@ -198,16 +200,11 @@ dl, dd {
     font-weight: 300;
 }
 
-.services-items .main-btn {
-    height: 50px;
-    width: 160px;
-    margin-top: 20px;
-}
 
 .services-items .main-btn {
     height: 50px;
     width: 160px;
-    margin-top: 20px;
+    margin-top: 13px;
 }
 
 .services-items .second-btn {
