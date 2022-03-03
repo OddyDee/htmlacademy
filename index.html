@@ -27,9 +27,17 @@
             <!-- Slider Wrapper -->
             <div class="main-slider_wrapper">
                 <div class="slider-controls">
-                    <button type="button" class="current" aria-label="Первый слайд"></button>
-                    <button type="button" aria-label="Второй слайд"></button>
-                    <button type="button" aria-label="Третий слайд"></button>
+                    <ul>
+                        <li class="slide-button" aria-label="Первый слайд">
+                            <img class="active-slide" src="/img/logo/slide-active.svg" alt="">
+                        </li>
+                        <li class="slide-button" aria-label="Второй слайд">
+                            <img class="none" src="/img/logo/slide-active.svg" alt="">
+                        </li>
+                        <li class="slide-button" aria-label="Третий слайд">
+                            <img class="none" src="/img/logo/slide-active.svg" alt="">
+                        </li>
+                    </ul>
                 </div>
                 
                 <!-- <div class="main-slider_wrapper">
@@ -58,7 +66,7 @@
                         вашего сайта или мобильного приложения.</p>
                         <button type="button" class="main-btn" name="button"><span>Узнать больше</span></button>
                     </div>
-                    <img src="img/slide1.png" alt="мобильное приложение">
+                    <img class="slide-bg" src="img/slide1.png" alt="мобильное приложение">
                 </article>
         
             <!-- Slide #2 -->
@@ -69,7 +77,7 @@
                         только математические формулы для расчета идеальных пропорций</p>
                         <button type="button" class="main-btn" name="button"><span>Узнать больше</span></button>
                     </div>
-                    <img src="img/slide2.png" alt="Математические пропорции">
+                    <img class="slide-bg" src="img/slide2.png" alt="Математические пропорции">
                 </article>
             
                 <!-- Slide #3 -->
@@ -80,7 +88,7 @@
                             Ближе к полуночи работа только начинается.</p>
                         <button type="button" class="main-btn" name="button"><span>Узнать больше</span></button>
                     </div>
-                    <img src="img/slide3.png" alt="Только ночь, только хардкор">
+                    <img class="slide-bg" src="img/slide3.png" alt="Только ночь, только хардкор">
                 </article>
             </div>
         </div>
@@ -128,7 +136,7 @@
 
         <div class="about-items items-left">
             <img src="img/nerds-about.jpg" alt="Nerds" width="360" height="208">
-            <h4>C 2004 года любим точность во всем:</h4>
+            <h4 class="items-left-title">C 2004 года любим точность во всем:</h4>
             <span>
             <dl>
                 <dt>146<sup>%</sup></dt>
@@ -165,7 +173,7 @@
                     <h3>NЁRDS DESIGN STUDIO</h3>
                     <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
                     <p><a href="tel: +7 800 555-86-28">+7 800 555-86-28</a></p>
-                    <button class="main-btn"><span>Напишите нам</span></button>
+                    <button class="main-btn write-btn"><span>Напишите нам</span></button>
                 </div>
             </div>
         </div>
