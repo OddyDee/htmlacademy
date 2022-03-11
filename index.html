@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icons/Favicon/16.svg">
+    <link rel="icon" href="img/icons/Favicon/32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/icons/Favicon/152.svg">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Дизайн студия "Nerds"</title>
 </head>
 <body class="page-body">
     <div class="header-bg">
@@ -32,10 +38,10 @@
                             <img class="active-slide" src="img/logo/slide-active.svg" alt="">
                         </li>
                         <li class="slide-button" aria-label="Второй слайд">
-                            <img class="none" src="img/logo/slide-active.svg" alt="">
+                            <img class="visual-hidden" src="img/logo/slide-active.svg" alt="">
                         </li>
                         <li class="slide-button" aria-label="Третий слайд">
-                            <img class="none" src="img/logo/slide-active.svg" alt="">
+                            <img class="visual-hidden" src="img/logo/slide-active.svg" alt="">
                         </li>
                     </ul>
                 </div>
@@ -70,7 +76,7 @@
                 </article>
         
             <!-- Slide #2 -->
-                <article class="main-slider slide-2 none">
+                <article class="main-slider slide-2 visual-hidden">
                     <div class="slide-content">
                         <h2>Любим математику как никто другой</h2>
                         <p>Никакого креатива, 
@@ -81,7 +87,7 @@
                 </article>
             
                 <!-- Slide #3 -->
-                <article class="main-slider slide-3 none">
+                <article class="main-slider slide-3 visual-hidden">
                     <div class="slide-content">
                         <h2>Только ночь, только хардкор</h2>
                         <p>Работать днем, как все? Мы против этого.
@@ -167,7 +173,9 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="main-wrapper">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31948.04504197433!2d30.272731687174378!3d59.969423663083205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696314db404b36b%3A0x1d934f1978240bba!2zTtGRcmRz!5e0!3m2!1sru!2suk!4v1647021301395!5m2!1sru!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
             <div class="write-conteiner">
                 <div class="foot-item">
                     <h3>NЁRDS DESIGN STUDIO</h3>
@@ -176,7 +184,7 @@
                     <button class="main-btn write-btn"><span>Напишите нам</span></button>
                 </div>
             </div>
-        </div>
+
         <div class="main-wrapper">
             <div class="contact">
                 <div class="social">
@@ -199,5 +207,30 @@
             </div>
         </div>
     </footer>
+    <section class="contact-us modal" id="contact-us">
+        <h2 class="contact-us__title subtitle">Напишите нам</h2><a class="modal__close" href="#">
+          <svg class="icon" role="img" focusable="false" width="21" height="21" aria-labelledby="modal-close">
+            <title id="modal-close">Закрыть форму</title>
+            <img src="img/icons/modal_close.svg" alt="">
+          </svg></a>
+        <form class="contact-us__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="contact-us__wrapper">
+            <label class="contact-us__label" for="contact-us__name">Ваше имя:</label>
+            <input class="contact-us__input" id="contact-us__name" type="text" placeholder="Имя Фамилия" name="name" />
+          </p>
+          <p class="contact-us__wrapper">
+            <label class="contact-us__label" for="contact-us__email">Ваш e-mail:</label>
+            <input class="contact-us__input" id="contact-us__email" type="email" placeholder="email@example.com"
+              name="email" />
+          </p>
+          <p class="contact-us__wrapper">
+            <label class="contact-us__label" for="contact-us__text">Текст письма:</label>
+            <textarea class="contact-us__input" id="contact-us__text" placeholder="В свободной форме"
+              name="letter"></textarea>
+          </p>
+          <button class="contact-us__submit main-btn" type="submit">Отправить</button>
+        </form>
+      </section>
+
 </body>
 </html>

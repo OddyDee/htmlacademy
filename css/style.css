@@ -1,7 +1,8 @@
 .page-body {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
 
 :root {
     --red: #FB565A;
@@ -125,7 +126,7 @@ dl, dd {
 .slide-content h2 {
     margin-bottom: 25px;
     font-size: 55px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 56px;
 }
 
@@ -150,7 +151,7 @@ dl, dd {
     position: absolute;
     bottom: 310px;
     left: 47.4%;
-    z-index: 20;
+    z-index: 1;
     width: 90px;
 }
 
@@ -175,7 +176,7 @@ dl, dd {
 }
 
 
-.none {
+.visual-hidden {
     display: none;
 }
 
@@ -203,7 +204,7 @@ dl, dd {
 .services-items p {
     font-size: 16px;
     line-height: 24px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
@@ -251,11 +252,12 @@ dl, dd {
 .about-items h2 {
     font-size: 45px;
     line-height: 45px;
+    font-weight: 500;
 }
 
 .about-items p {
     line-height: 24px;
-    font-weight: 100;
+    font-weight: 400;
     margin-bottom: 30px;
 }
 
@@ -349,7 +351,7 @@ sup {
 }
 
 .footer {
-    background-image: url("../img/map.jpg");
+    position: relative;
     background-position: top center;
     background-repeat: no-repeat;
     display: flex;
@@ -362,6 +364,9 @@ sup {
 }
 
 .write-conteiner {
+    position: absolute;
+    left: 10%;
+    top: 7%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -370,6 +375,7 @@ sup {
     background: white;
     padding: 10px;
     margin-top: 15px;
+
 }
 
 .write-btn {
@@ -440,6 +446,160 @@ sup {
     margin: 0;
     padding: 0;
     line-height: 36px;
-    font-weight: 300;
+    font-weight: 400;
     font-style: 18px;
 }
+
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+    70% {
+      transform: translateY(-30px);
+    }
+    90% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes close {
+    0% {
+      transform: translateY(0);
+      display: flex;
+    }
+    70% {
+      transform: translateY(30px);
+    }
+    90% {
+      transform: translateY(-40px);
+    }
+    100% {
+      transform: translateY(-2000px);
+      display: none;
+    }
+  }
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(10px);
+    }
+  }
+
+
+.icon {
+  position: relative;
+  top: 0.125em;
+  flex-shrink: 0;
+  transition: fill 0.3s;
+  fill: currentColor;
+}
+
+  .contact-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 960px;
+    padding: 72px 100px 80px;
+  }
+
+  .contact-us h2 {
+    font-size: 45px;
+    font-weight: 500;
+  }
+  .contact-us__title {
+    margin: 0 0 50px;
+  }
+  .contact-us__form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contact-us__wrapper {
+    width: 360px;
+    margin: 0 0 36px;
+  }
+  .contact-us__wrapper:last-of-type {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+  .contact-us__wrapper:last-of-type textarea {
+    resize: none;
+    height: 118px;
+    
+  }
+  .contact-us__label {
+    display: block;
+    font-weight: bold;
+    line-height: 1.13;
+    margin-bottom: 12px;
+  }
+  .contact-us__input {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 50px;
+    padding: 14px 16px;
+    border-radius: 3px;
+    border: 2px solid #d7dcde;
+    background-color: #ffffff;
+  }
+  .contact-us__input:hover {
+    border-color: #b4b9bb;
+  }
+  .contact-us__input:focus {
+    border-color: #000000;
+    outline: none;
+  }
+  .contact-us__input:invalid {
+    color: #e74246;
+    border-color: #e74246;
+  }
+  .contact-us__submit {
+    width: 260px;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 6vh auto auto;
+    background: #ffffff;
+    box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+    z-index: 2;
+    display: none;
+  }
+  .modal--close {
+    display: flex;
+    animation: close 0.9s forwards;
+  }
+  .modal--show, .modal:target {
+    display: flex;
+    animation: bounce 0.6s;
+  }
+  .modal--error {
+    animation: shake 0.6s;
+  }
+  .modal__close {
+    margin-bottom: 50px;
+    color: #fb565a;
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  .modal__close:hover {
+    opacity: 1;
+  }
+  .modal__close:active {
+    color: #fb565a;
+    opacity: 0.3;
+  }
